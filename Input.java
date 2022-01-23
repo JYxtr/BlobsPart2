@@ -55,7 +55,7 @@ public class Input {
         try {
             result = (short) Integer.parseInt(sca.nextLine());
         } catch (NumberFormatException e) {
-            System.out.println(RED + BOLD + "Whoops, looks like you included a string in your response." + RESET);
+            System.out.println(RED + BOLD + "Whoops, ensure your response is a number between 1-1000." + RESET);
             result = get();
         }
         return result;
